@@ -1,0 +1,45 @@
+Configurando por primera ves git:
+
+*Para configurar el nombre de usuario y el correo electronico:
+git config --global user.name "Antony Brea"
+git config --global user.email 20164332@itla.edu.do
+
+*Para verificar las configuraciones ya establecida:
+git config --list
+
+*Para inicial git:
+git init
+
+*Para ubicarnos en el lugar donde guardaremos el contenido
+que subiremos o trabajaremos para github:
+cd + <RUTA DE LA CARPETA>
+
+*Para agregar o actualizar todo el contenido de nuestra carpeta
+git add . <-- EL PUNTO SIGNICA TODO EL CONTENIDO
+
+* *****
+git commit -m "..." <--EN LOS TRES PUNTO AGREGAR EL COMENTARIO QUE SE VISUALIZARA EN LA ACTUALIZACION EN GITHUB
+
+*
+git remote add origin ... <-- EN LOS TRES PUNTO AGREGAR la direccion URL en donde de guardara el contenido en github.
+
+*Para ver el status de estado actual de las configuraciones y los archivos de nuestra carpeta
+Git status 
+
+*Para el contenido a la prataforma de 
+git push origin master 
+
+*****************RESUMEN DE COMANDO**********************
+
+*git init
+*cd + <RUTA DE LA CARPETA>
+*git init
+*git add .
+*git commit -m ''...''
+*git remote add origin + URL
+*git status
+*git push origin master
+
+
+
+
