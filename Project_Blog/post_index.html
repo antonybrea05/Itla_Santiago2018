@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Post-Index</title>
+    <link rel="stylesheet" href="css/index_style.css" />
+
+    <script>if(window.localStorage.getItem("Token")==undefined){window.location="login.html";}</script>
+</head>
+<body>
+    <div>
+        <div align="right" id="cs">
+            <button type="button" id="btn-3" >Cerrar sección</button>
+        </div>     
+        <header class:"h1">
+            <h2>Blog</h2>
+        </header>
+    </div>
+
+    <div  align="center" class="contenido">
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <td align="center">Comentarios de la publicación</td>
+               
+                </tr>
+            </thead>
+            <div>
+                <tbody id="tabla_post">
+
+                </tbody>
+            </div>
+        </table>
+
+        <div id="cs2">
+            <header class="h2">
+                <p>Comentarios</p>
+                <textarea placeholder="Has una comentarios" id="bodyPost"></textarea>
+                <button id="btn-5">Enviar</button>
+            </header> 
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/security-api.js"></script>
+    <script src="js/user-api.js"></script>
+    <script src="js/post-api.js"></script>
+    <script src="js/postInfo.js"></script>
+</body>
+</html>

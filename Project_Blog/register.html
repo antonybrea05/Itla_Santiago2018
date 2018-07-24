@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="uft-8">
+        <title>Registro Blog</title>
+        <link rel="stylesheet" href="css/register_style.css" />
+        
+        <script>if(window.localStorage.getItem("Token")!=undefined){window.location="index.html";}
+  
+        </script>
+    </head>
+    <body>
+        <div  id="agruparr">
+            <header id:"cabeceraa">
+                <h1>Registro para nuevos usuarios</h1>
+            </header>
+            <form>
+                <div>
+                    <label>Nombre: </label>
+                    <input  class="form-control" type="text" placeholder="Ingrese el nombre" id="name"/>
+                </div><div>
+                    <label>Email:</label>
+                    <input class="form-control" type="mail" required placeholder="example@dominio.com" id="email"/>
+                </div><div>
+                    <label>Contraseña:</label>
+                    <input class="form-control" type="password" required placeholder="Ingrese contraseña" id="pass"/>
+                </div><div>
+                    <label>Confirmar contraseña:</label>
+                    <input class="form-control" type="password" required placeholder="Confirmar contraseña" id="pass2"/>
+                </div><div>
+                        <button type="button" id="btn-2" class="">Registrarse</button>
+                </div>
+            </form>
+        </div>
+        
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/security-api.js"></script>
+        <script src="js/login.js"></script>
+    </body>
+</html>

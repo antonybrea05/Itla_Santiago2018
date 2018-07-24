@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Acceso Blog</title>
+        <link rel="stylesheet" href="css/misestilos.css" />
+        
+        <script>if(window.localStorage.getItem("Token")!=undefined){window.location="index.html";}</script>
+
+    </head>
+    <body>
+        <div class="agrupar">
+            <div>
+                <img src="img/usuario2.jpg" align="right">
+                <header class="cabecera">
+                    <h1>Acceso Blog</h1>
+                </header>
+            </div>
+            <div>
+                <form>
+                    <div>
+                        <label>Usuario:</label>
+                        <input class="form-control" required type="email" placeholder="Ingrese e-mail" id="email"/>
+                    </div>
+                    <div>
+                        <label>Contraseña:</label>
+                        <input class="form-control"  type="password" placeholder="Ingrese contraseña" id="pass"/>
+                    </div>
+                    <div>
+                        <button type="button" id="btn-1">Acceder</button>
+                    </div>
+                    <div>
+                        <a href="register.html" class="logup">+Registrarse</a>  
+                    </div>
+                </form>
+            </div>
+        </div> 
+    </body>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/security-api.js"></script>
+    <script src="js/login.js"></script>
+</html>
