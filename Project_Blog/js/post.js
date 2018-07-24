@@ -11,6 +11,18 @@ function logout(){
         });
 }
 
+function crearPost(){
+    var title = document.getElementById("title_post").value;
+    var body = document.getElementById("body_post").value;
+    PostApi.CreatePost(title, body, token)
+        .then(function(){
+            location.reload(); // Re-direccional a la página de inicio.
+        })
+        .catch(function(error){
+            console.log(error);
+        });
+}
+
 function showPost(ArrayList){
     PostApi.ShowPost(token)
         .then(function(data){
@@ -53,6 +65,7 @@ function userList(){
         console.log(error);
     });
 }
+
 function btn_4(post){
     var id=post.getAttribute("id");
     window.localStorage.setItem("PostId", id);
@@ -61,6 +74,11 @@ function btn_4(post){
 window.onload = function(){
     $("#btn-3").click(function(){
         logout();
+
+    });
+    $("#btn-10").click(function(){
+        crearPost();
+
     });
 
     userList();

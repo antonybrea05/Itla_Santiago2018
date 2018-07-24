@@ -92,6 +92,8 @@ function comentar() {
         console.log(error);
     });
 }
+
+
 function btn_4(post){
     var id = post.getAttribute("id");
     window.localStorage.setItem("PostId", id);
