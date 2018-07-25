@@ -41,6 +41,10 @@ function showPost(ArrayList){
                 divTitle.setAttribute("id",post.id);
                 divTitle.setAttribute("onclick","btn_4(this);");
                 divTitle.setAttribute("class", "Title");
+
+                divUser.setAttribute("class", "User");
+
+                divBody.setAttribute("class", "Body");
                 
                 tdPost.appendChild(divTitle);
                 tdPost.appendChild(divUser);

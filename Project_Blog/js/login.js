@@ -1,25 +1,15 @@
 function login(){
     var email = $("#email").val();
     var password = $("#pass").val();
-
-        SecurityApi.login(email, password)
+    SecurityApi.login(email, password)
         .then(function(response){
             var token = response.token;
             window.localStorage.setItem("Token", token); // Registrar el token en local storage.
             window.location = "index.html"; // Redireccionar a index.html
         })
         .catch(function(error){
-            console.log(error);
-        });
- 
-        if(login==undefined){
-
-            alert("Las contraseñas");
-
-
-        }
-        
-
+            alert("La credencial utilizada es incorrecta");
+        });    
 }
 
 function logup(){
@@ -50,4 +40,3 @@ window.onload = function(){
         logup();
     });
 }
-

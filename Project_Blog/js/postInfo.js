@@ -28,6 +28,9 @@ function showPost(ArrayList){
                 divBody.textContent = data[postId].body;
 
                 divTitle.setAttribute("class", "Title");
+                divUser.setAttribute("class", "User");
+                divBody.setAttribute("class", "Body");
+
                 
                 tdPost.appendChild(divTitle);
                 tdPost.appendChild(divUser);
@@ -59,6 +62,9 @@ function PostInfo(ArrayList){
             divBody.textContent = post.body;
             divUser.textContent = "By: "+ ArrayList[post.userId-1].name + " (" + ArrayList[post.userId-1].email +")";
             
+            divUser.setAttribute("class", "User2");
+            divBody.setAttribute("class", "Body2");
+
             tdPost.appendChild(divBody);
             tdPost.appendChild(divUser);
             
